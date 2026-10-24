@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iglesio Barbearia | São Félix do Xingu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            background: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: black;
+            border-bottom: 2px solid #D4AF37
+        }
+
+        .btn-topo {
+            background: #D4AF37;
+            color: black;
+            padding: 8px 18px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold
+        }
+
+        .hero {
+            padding: 60px 15px;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('fundo-corte.jpg');
+            background-size: cover
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            color: #D4AF37
+        }
+
+        .btn-gold {
+            background: #D4AF37;
+            color: black;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px
+        }
+
+        #ia-box {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            background: #121212;
+            border: 2px solid #D4AF37;
+            border-radius: 15px;
+            width: 320px;
+            max-width: 90vw;
+            display: none;
+            flex-direction: column;
+            z-index: 1000
+        }
+
+        #ia-head {
+            background: #D4AF37;
+            color: black;
+            padding: 12px;
+            border-radius: 13px 13px 0 0;
+            font-weight: bold;
+            display: flex;
+            justify-content: space-between
+        }
+
+        #ia-chat {
+            height: 280px;
+            overflow-y: auto;
+            padding: 15px;
+            text-align: left;
+            font-size: 14px
+        }
+
+        #ia-input-area {
+            display: flex;
+            padding: 10px;
+            gap: 8px;
+            border-top: 1px solid #333
+        }
+
+        #ia-input-area input {
+            flex: 1;
+            padding: 10px;
+            border-radius: 20px;
+            border: none;
+            background: #222;
+            color: white
+        }
+
+        #ia-input-area button {
+            background: #D4AF37;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer
+        }
+
+        .msg-user {
+            background: #D4AF37;
+            color: black;
+            padding: 8px 12px;
+            border-radius: 15px 15px 0 15px;
+            margin: 8px 0 8px 40px
+        }
+
+        .msg-ia {
+            background: #222;
+            padding: 8px 12px;
+            border-radius: 15px 15px 15px 0;
+            margin: 8px 40px 8px 0
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2 style="color:#D4AF37;">IGLESIO BARBEARIA</h2><a class="btn-topo"
+            href="https://wa.me/5594991596692">Agendar</a>
+    </header>
+    <div class="hero">
+        <h1>IGLESIO</h1>
+        <p>Barbearia Premium em São Félix do Xingu</p><a class="btn-gold" href="https://wa.me/5594991596692">Agendar no
+            WhatsApp</a>
+    </div>
+
+    <section style="background:#0d0d0d; padding:60px 15px; border-top:1px solid #222;">
+        <h2 style="color:#D4AF37;font-size:30px;margin-bottom:8px;">NOSSOS SERVIÇOS</h2>
+        <p style="color:#aaa;margin-bottom:35px;">Valores atualizados | Aberto das 9h às 21h</p>
+        <div
+            style="max-width:950px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;text-align:left;">
+            <div style="border:1px solid #D4AF37;border-radius:14px;padding:22px;background:#1a1a1a;">
+                <h3 style="color:#D4AF37;margin-bottom:14px;">✂️ CORTES</h3>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Corte Social</span><b
+                        style="color:#D4AF37;">R$ 30</b></p>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Degradê</span><b
+                        style="color:#D4AF37;">R$ 35</b></p>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Navalhado</span><b
+                        style="color:#D4AF37;">R$ 45</b></p>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Tesoura</span><b
+                        style="color:#D4AF37;">R$ 45</b></p>
+            </div>
+            <div style="border:1px solid #D4AF37;border-radius:14px;padding:22px;background:#1a1a1a;">
+                <h3 style="color:#D4AF37;margin-bottom:14px;">🧔 BARBA</h3>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Barba Simples</span><b
+                        style="color:#D4AF37;">R$ 20</b></p>
+                <p style="display:flex;justify-content:space-between;margin:10px 0;"><span>Barba Premium</span><b
+                        style="color:#D4AF37;">R$ 30</b></p>
+                <hr style="border-color:#333;margin:18px 0;">
+                <p style="color:#D4AF37;font-size:14px;margin-bottom:8px;">COMBOS</p>
+                <p style="color:#ccc;font-size:13px;line-height:20px;">Social + Simples: R$ 45<br>Degradê + Premium: R$
+                    60<br>Navalhado + Premium: R$ 70</p>
+            </div>
+            <div style="border:1px solid #D4AF37;border-radius:14px;padding:22px;background:#1a1a1a;">
+                <h3 style="color:#D4AF37;margin-bottom:14px;">🔥 ESPECIAIS</h3>
+                <p style="font-size:14px;line-height:24px;color:#ddd;">Trabalhamos com:<br>• Luzes / Nevou<br>•
+                    Pigmentação<br>• Selagem / Botox<br>• Desondulação<br>• e muito mais</p>
+                <a href="https://wa.me/5594991596692?text=Quero%20saber%20sobre%20especiais"
+                    style="display:block;margin-top:16px;background:#D4AF37;color:#000;text-align:center;padding:11px;border-radius:10px;text-decoration:none;font-weight:bold;">Consultar
+                    no WhatsApp</a>
+            </div>
+        </div>
+        <div
+            style="margin-top:35px;color:#fff;background:#222;display:inline-block;padding:12px 28px;border-radius:30px;border:1px solid #D4AF37;">
+            ⏰ <b>Horário:</b> 9h às 21h | Segunda a Sábado</div>
+    </section>
+
+    <section style="background:#0d0d0d;padding:50px 15px;border-top:1px solid #222;">
+        <div
+            style="max-width:950px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px;align-items:center;">
+            <div style="text-align:left;background:#1a1a1a;padding:25px;border-radius:14px;border:1px solid #D4AF37;">
+                <h3 style="color:#D4AF37;margin-bottom:10px;">📸 Segue no Insta</h3>
+                <p style="color:#ccc;font-size:14px;margin-bottom:15px;">Veja nossos cortes e transformações.</p>
+                <a href="https://instagram.com/robsoniglesio" target="_blank"
+                    style="display:inline-block;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:bold;">Ver
+                    no Instagram @robsoniglesio</a>
+            </div>
+            <div style="background:#1a1a1a;padding:15px;border-radius:14px;border:1px solid #D4AF37;">
+                <h3 style="color:#D4AF37;margin-bottom:12px;text-align:left;">📍 Onde estamos</h3>
+                <p style="color:#ccc;text-align:left;font-size:14px;margin-bottom:12px;">Av. Goiás, 900 - São Félix do
+                    Xingu - PA<br>Aberto das 9h às 21h</p>
+                <iframe style="width:100%;height:260px;border:0;border-radius:10px;" loading="lazy" allowfullscreen
+                    src="https://www.google.com/maps?q=Av+Goias+900+São+Félix+do+Xingu+PA&z=17&output=embed"></iframe>
+                <a href="https://www.google.com/maps/search/?api=1&query=Av+Goias+900+São+Félix+do+Xingu"
+                    target="_blank"
+                    style="display:block;margin-top:12px;background:#D4AF37;color:black;padding:10px;border-radius:10px;text-decoration:none;font-weight:bold;text-align:center;">Abrir
+                    no Google Maps / Waze</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="ia-box">
+        <div id="ia-head"><span>💈 Assistente IGLESIO</span><span onclick="toggleIA()" style="cursor:pointer;">X</span>
+        </div>
+        <div id="ia-chat">
+            <div class="msg-ia">Fala! Cortes R$30 a R$45, Barba R$20 a R$30, Especiais sob consulta. Av. Goiás 900,
+                aberto 9h às 21h. Quer agendar?</div>
+        </div>
+        <div id="ia-input-area"><input id="ia-input" placeholder="Pergunte algo..."><button
+                onclick="enviarIA()">➤</button></div>
+    </div>
+    <button onclick="toggleIA()"
+        style="position:fixed;bottom:20px;right:20px;background:#D4AF37;color:black;border:none;width:65px;height:65px;border-radius:50%;font-size:28px;cursor:pointer;z-index:1001;">💬</button>
+
+    <script>
+        function toggleIA() {
+            const b = document.getElementById('ia-box');
+            b.style.display = b.style.display === 'flex' ? 'none' : 'flex';
+        }
+        async function enviarIA() {
+            const input = document.getElementById('ia-input');
+            const chat = document.getElementById('ia-chat');
+            const texto = input.value.trim();
+            if (!texto) return;
+            chat.innerHTML += `<div class="msg-user">${texto}</div>`;
+            input.value = '';
+            let resposta = "Cortes de R$30 a R$45, Barba R$20 a R$30. Estamos na Av. Goiás 900, aberto das 9h às 21h. Quer agendar?";
+            if (texto.toLowerCase().includes("preço") || texto.toLowerCase().includes("valor")) resposta = "✂️ Social R$30, Degradê R$35, Navalhado R$45, Tesoura R$45. 🧔 Barba Simples R$20, Premium R$30.";
+            if (texto.toLowerCase().includes("onde") || texto.toLowerCase().includes("endereço")) resposta = "📍 Av. Goiás 900, São Félix do Xingu - PA. Aberto 9h às 21h.";
+            setTimeout(() => {
+                chat.innerHTML += `<div class="msg-ia">${resposta} <br><br><a href='https://wa.me/5594991596692' style='color:#D4AF37;font-weight:bold;'>Agendar no WhatsApp</a></div>`;
+                chat.scrollTop = chat.scrollHeight;
+            }, 500);
+        }
+        document.getElementById('ia-input').addEventListener('keypress', e => { if (e.key === 'Enter') enviarIA(); });
+    </script>
+</body>
+
+</html>
