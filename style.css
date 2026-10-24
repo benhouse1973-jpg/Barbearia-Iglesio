@@ -188,3 +188,9 @@ footer {
         margin-top: 20px !important;
     }
 }
+
+.botao-whatsapp,
+.btn-amarelo {
+    margin-top: 35px !important;
+    position: relative;
+}
