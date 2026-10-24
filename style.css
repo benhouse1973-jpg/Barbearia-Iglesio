@@ -166,3 +166,25 @@ footer {
     background: #000;
     color: #777;
 }
+
+/* CORREÇÃO MOBILE - logo não cobrir */
+.logo {
+    display: block;
+    margin: 20px auto 40px auto !important;
+    width: 280px !important;
+    max-width: 90%;
+}
+
+@media (max-width: 768px) {
+
+    .hero,
+    .topo,
+    header {
+        padding-top: 20px !important;
+    }
+
+    .btn-agendar,
+    .botao-whatsapp {
+        margin-top: 20px !important;
+    }
+}
