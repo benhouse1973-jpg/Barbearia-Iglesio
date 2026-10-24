@@ -23,21 +23,24 @@ header {
 .btn-topo {
     background: #D4AF37;
     color: black;
-    padding: 8px 18px;
-    border-radius: 20px;
+    padding: 12px 25px;
+    border-radius: 8px;
+    /* QUADRADO */
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero {
-    background: url('img/banner.jpg') center top / contain no-repeat;
+    background: url('img/banner.jpg') center / contain no-repeat;
     background-color: #000;
-    min-height: 650px;
+    min-height: 80vw;
+    /* ajusta automatico pro celular */
+    max-height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 60px;
+    padding: 30px 20px 60px;
     border-bottom: 3px solid #D4AF37;
 }
 
@@ -47,43 +50,119 @@ header {
 }
 
 .hero h1 {
-    font-size: 68px;
+    font-size: 48px;
     color: #D4AF37;
     text-shadow: 2px 2px 8px black;
     margin-bottom: 5px;
+    margin-top: 20px;
 }
 
 .hero p {
     color: white;
     text-shadow: 1px 1px 4px black;
+    margin-bottom: 15px;
 }
 
 .btn-gold {
     background: #D4AF37;
     color: black;
-    padding: 15px 30px;
-    border-radius: 30px;
+    padding: 18px 35px;
+    border-radius: 8px;
+    /* QUADRADO E VISIVEL */
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 900;
+    font-size: 18px;
     display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    border: 2px solid #D4AF37;
+}
+
+.btn-outline {
+    border: 3px solid #D4AF37;
+    color: #D4AF37;
+    padding: 18px 35px;
+    border-radius: 8px;
+    /* QUADRADO */
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 18px;
+    display: inline-block;
+    margin: 10px;
+    background: #1a1a1a;
+}
+
+.botoes-principais {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+    width: 100%;
     margin-top: 20px;
 }
 
 .cards {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     justify-content: center;
-    padding: 30px;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+    /* pra não espremer */
 }
 
 .card {
     background: #1a1a1a;
-    border: 1px solid #D4AF37;
-    padding: 20px;
-    border-radius: 15px;
-    width: 120px;
+    border: 2px solid #D4AF37;
+    padding: 25px;
+    border-radius: 12px;
+    /* QUADRADO */
+    width: 300px;
+    /* AQUI TAVA 120px, POR ISSO FICAVA FEIO */
+    text-align: left;
 }
 
 .card h3 {
     color: #D4AF37;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #222;
+}
+
+.card ul li span {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+.texto-especiais {
+    color: #ccc;
+    line-height: 1.6;
+    font-size: 15px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.card.destaque {
+    border: 2px solid #D4AF37;
+}
+
+.horario {
+    background: #111;
+    padding: 40px 20px;
+    border-top: 2px solid #D4AF37;
+}
+
+footer {
+    padding: 20px;
+    background: #000;
+    color: #777;
 }
