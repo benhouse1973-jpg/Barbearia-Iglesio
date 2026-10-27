@@ -25,23 +25,30 @@ header {
     color: black;
     padding: 12px 25px;
     border-radius: 8px;
-    /* QUADRADO */
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero {
-    background: url('img/banner.jpg') center / contain no-repeat;
+    /* TIREI O BACKGROUND DAQUI, AGORA USA A IMG */
     background-color: #000;
-    min-height: 80vw;
-    /* ajusta automatico pro celular */
-    max-height: 700px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding: 30px 20px 60px;
+    padding: 30px 20px 40px;
     border-bottom: 3px solid #D4AF37;
+}
+
+/* LOGO CORRIGIDA - ERA .logo E O CERTO É .logo-principal */
+.logo-principal {
+    display: block !important;
+    width: 320px !important;
+    max-width: 85% !important;
+    height: auto !important;
+    margin: 0 auto 30px auto !important;
+    border: 2px solid #D4AF37;
+    border-radius: 12px;
 }
 
 .hero::before,
@@ -50,17 +57,14 @@ header {
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 42px;
     color: #D4AF37;
-    text-shadow: 2px 2px 8px black;
     margin-bottom: 5px;
-    margin-top: 20px;
 }
 
 .hero p {
     color: white;
-    text-shadow: 1px 1px 4px black;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .btn-gold {
@@ -68,12 +72,12 @@ header {
     color: black;
     padding: 18px 35px;
     border-radius: 8px;
-    /* QUADRADO E VISIVEL */
     text-decoration: none;
     font-weight: 900;
     font-size: 18px;
-    display: inline-block;
-    margin: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
     text-transform: uppercase;
     border: 2px solid #D4AF37;
 }
@@ -83,12 +87,12 @@ header {
     color: #D4AF37;
     padding: 18px 35px;
     border-radius: 8px;
-    /* QUADRADO */
     text-decoration: none;
     font-weight: 900;
     font-size: 18px;
-    display: inline-block;
-    margin: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 100%;
     background: #1a1a1a;
 }
 
@@ -107,7 +111,6 @@ header {
     justify-content: center;
     padding: 40px 20px;
     flex-wrap: wrap;
-    /* pra não espremer */
 }
 
 .card {
@@ -115,9 +118,7 @@ header {
     border: 2px solid #D4AF37;
     padding: 25px;
     border-radius: 12px;
-    /* QUADRADO */
     width: 300px;
-    /* AQUI TAVA 120px, POR ISSO FICAVA FEIO */
     text-align: left;
 }
 
@@ -151,10 +152,6 @@ header {
     text-align: center;
 }
 
-.card.destaque {
-    border: 2px solid #D4AF37;
-}
-
 .horario {
     background: #111;
     padding: 40px 20px;
@@ -167,30 +164,12 @@ footer {
     color: #777;
 }
 
-/* CORREÇÃO MOBILE - logo não cobrir */
-.logo {
-    display: block;
-    margin: 20px auto 40px auto !important;
-    width: 280px !important;
-    max-width: 90%;
-}
-
 @media (max-width: 768px) {
-
-    .hero,
-    .topo,
-    header {
-        padding-top: 20px !important;
+    .logo-principal {
+        width: 220px !important;
     }
 
-    .btn-agendar,
-    .botao-whatsapp {
-        margin-top: 20px !important;
+    .hero h1 {
+        font-size: 28px;
     }
-}
-
-.botao-whatsapp,
-.btn-amarelo {
-    margin-top: 35px !important;
-    position: relative;
 }
