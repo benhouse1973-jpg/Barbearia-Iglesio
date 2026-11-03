@@ -1,0 +1,15 @@
+{
+  "name": "Iglesio Barbearia | São Félix do Xingu - PA",
+  "short_name": "Iglesio",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#FFD700",
+  "icons": [
+    {
+      "src": "banner.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
