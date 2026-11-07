@@ -52,7 +52,8 @@
                 <h3>🔥 ESPECIAIS</h3>
                 <p class="texto-especiais">
                     Trabalhamos<br>
-                    com luzes, nevou, pigmentação, selagens, desondulação, cortes de cabelo infantil e muito mais venha conferir
+                    com luzes, nevou, pigmentação, selagens, desondulação, cortes de cabelo infantil e muito mais venha
+                    conferir
                 </p>
                 <a href="https://wa.me/5594991596692" class="btn btn-gold btn-small">Consultar no WhatsApp</a>
             </div>
@@ -69,6 +70,12 @@
     <footer>
         <p>© 2026 Iglesio Barbearia</p>
     </footer>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('./sw.js')
+                .then(() => console.log('App pronto para instalar!'));
+        }
+    </script>
 
 </body>
 
